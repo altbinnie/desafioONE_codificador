@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>codificador</title>
+  <link rel="stylesheet" type="text/css" href="style1.css"/>
+</head>
+<body>
+
+  <div class="main">
+    <h1>codificador</h1>
+
+    <div class="input">
+      <label for="textoOriginal">Texto Original:</label>
+      <textarea id="textoOriginal" placeholder="digite seu texto aqui"></textarea>
+      <div class="button-container">
+        <button onclick="criptografar()">Criptografar</button>
+        <button onclick="descriptografar()">Descriptografar</button>
+      </div>
+    </div>
+
+    <div class="output">
+      <label for="textoCripto">Texto Criptografado/Descriptografado:</label>
+      <textarea id="textoCripto" readonly></textarea>
+      <button class="copy-button" onclick="copiarTexto()">
+      <img src="recursos/copy.png" alt="copy text" height="21"> </button>
+    </div>
+
+  </div>
+
+  <script src="cripto.js"></script>
+</body>
+</html>
